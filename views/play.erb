@@ -1,6 +1,10 @@
-Prepare to fight, <%= @player_1.name %> and <%= @player_2.name %>!
+Prepare to fight, <%= @game.player_1.name %> and <%= @game.player_2.name %>!
 <br>
-<%= @player_2.name %>: 60hp
+<%= @game.player_1.name %>: <%= @game.player_1.hit_points %>hp
+<br>
+<%= @game.player_2.name %>: <%= @game.player_2.hit_points %>hp
+<br>
+<%= @game.current_turn.name %>'s turn
 <br>
 <form action='/attack'>
   <input type='submit' value='Attack'>
